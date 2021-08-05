@@ -6,8 +6,8 @@ This script was used in a Rasberry Pi Zero W which had a constant internet conne
 
 I followed the steps described below to run this script every startup:
 
-- sudo cp -i /path/to/auto_date.py /bin
+- sudo cp -i /path/to/auto_date_time.py /bin
 - sudo crontab -e
 - open the file and go to a new line (without "#")
-- add the command: "@reboot python3 /bin/auto_date.py &" (Don't forget the "&")
+- add the command: "@reboot python3 /bin/auto_date_time.py &" (Don't forget the "&")
 - test it using "sudo reboot"
