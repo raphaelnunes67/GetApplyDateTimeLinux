@@ -19,6 +19,8 @@ if __name__ == '__main__':
   except:
     print("Unable to set date and hour")
     exit()
-  
+   
+  run(["timedatectl", "set-timezone", "America/Manaus"])
   run(["timedatectl", "set-time", date + " " + time])
   print(f'Date and time have been set: {date} {time}')
+  print("Timezone: America/Manaus")
